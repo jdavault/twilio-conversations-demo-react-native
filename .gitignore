@@ -2,11 +2,16 @@
 
 # dependencies
 node_modules/
-
-# Expo
 .expo/
-dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
 web-build/
+ios/
 
 # Native
 *.orig.*
@@ -15,6 +20,10 @@ web-build/
 *.p12
 *.key
 *.mobileprovision
+
+.env
+.env.*
+!.env.example
 
 # Metro
 .metro-health-check*
@@ -30,6 +39,16 @@ yarn-error.*
 
 # local env files
 .env*.local
+
+# Firebase Connection
+GoogleService-Info.plist
+
+# @end expo-cli
+communidy.zip
+
+# SFDC Deployment artifacts
+sfdeploy/pages/Communidy.page
+sfdeploy/staticresources/ReactApp.resource
 
 # typescript
 *.tsbuildinfo
